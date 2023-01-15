@@ -1,0 +1,328 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red;  */
+}
+
+body{
+    font-family: 'Signika', sans-serif;
+    max-width: 100%;
+    background: url("./fundot.png") center center/cover;
+}
+/* Agora eu comento com ctrl + : */
+/* Agora posso comentar */
+
+/* .divzona { 
+height: fit-content;
+}*/
+
+#navbar{
+    display: flex;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    width:100%;
+
+}
+
+.navbar-container{
+    width: 60%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+   
+}
+
+.navbar-item{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+}
+
+.navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+.navbar-container ul li{
+    padding: 0 20px;
+}
+
+.navbar-container ul li a:hover {
+    color: #313088;
+    cursor: pointer;
+}
+
+.navbar-container ul li:nth-child(3){
+    border-right: 1px solid white;
+}
+
+
+#showcase
+{
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+    
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+#showcase .showcase-container h2 {
+    font-size: 10rem;
+    font-weight: 1000 bold;
+    letter-spacing: -10px;
+    color: #313088;
+    
+}
+
+#showcase .showcase-container p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    
+}
+
+#showcase .showcase-container .loginBotao {
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    padding: 20px 100px;
+    background-color: #313088;
+    color: white;
+    border-radius: 30%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    
+        
+}
+
+#showcase .showcase-container .loginBotao:hover{
+    outline: none;
+    border: none;
+    margin-top: 17px;
+    padding: 20px 103px;
+    background-color: #313088;
+    color: white;
+    border-radius: 30%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 35px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#showcase .showcase-container .loginLimpar {
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    padding: 20px 100px;
+    background-color: #313088;
+    color: white;
+    border-radius: 30%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    
+        
+}
+
+#showcase .showcase-container .loginLimpar:hover{
+    outline: none;
+    border: none;
+    margin-top: 17px;
+    padding: 20px 103px;
+    background-color: #313088;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 35px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#caixa{
+    outline: none;
+    border: none;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border-radius: 30px;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+}
+
+fieldset{
+    outline: none;
+    border: none;
+}
+
+.texto {
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.loginBotao:hover {  
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+.loginBotao {  
+    text-decoration: none;
+    color:white;
+    cursor: pointer;    
+}
+
+footer{
+    display: flex;
+    background-color: rgba(0,0,0,1);
+    justify-content: center;
+    width:100%;
+}
+
+.titulos-footer{
+    
+    color: lightgrey;
+    margin-left: 150px;
+    line-height: 30px;
+    margin-top: 1px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+
+.titulos-footer:hover{
+    cursor: default; 
+}
+
+.margem-footer{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.footer-conteudo {
+    color: white;
+    margin-left: 150px;
+    line-height: 30px;
+    margin-top: 1px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+
+
+.footer-conteudo:hover {
+    color: #313088;
+    cursor: pointer;
+}
+
+.social{
+    color: white;
+    margin: 0 20px;
+    font-size: 1.7rem;
+    padding: 10px;
+}
+
+.instagram-logo{
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.facebook-logo{
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.twitter-logo{
+    margin-left: 30px;
+}
+
+.instagram-logo:hover{
+    color: #313088;
+    cursor: pointer;
+}
+.facebook-logo:hover{
+    color: #313088;
+    cursor: pointer;
+}
+.twitter-logo:hover{
+    color: #313088;
+    cursor: pointer;
+}
+.footer-infos {   
+    color: lightgray;
+    background-color: black;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    margin-left: -170px;
+    
+}
+
+.infos-footer-items { 
+    display: flex;
+    width: fit-content;
+    list-style: none;
+    justify-content: left;
+    font-size: 10px;
+    margin-right: 60px; 
+    padding-left: 37px;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.infos-footer-items {
+    cursor: pointer;
+}
+
+    .copysss{
+    color: white;
+    font-size: 10px;
+    justify-content:left;
+}
+
+.country {
+    background-color: black;
+    display: flex;
+    height: 10px;
+    width: auto;
+    font-size: 10px;
+    margin-left: 900px;
+}
+
+/* .brasil-flag { */
+    /* display: flex; */
+    /* height: 15px; */
+    /* width: auto; */
+    /* margin-left: 450px; */
+    /* margin-right: 10px;}*/

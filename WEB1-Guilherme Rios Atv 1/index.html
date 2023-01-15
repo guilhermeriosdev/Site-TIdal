@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script language="JavaScript">
+        function Login() {
+            var user=document.frm_seguranca.txt_user.value;
+            var email=document.frm_seguranca.txt_user.value;
+            var senha=document.frm_seguranca.txt_pswrd.value;
+            
+            if ((user=="fatec123" || email=="fatec@fatec") && senha=="123") {
+            alert("Login efetuado");
+            window.location="http://www.globo.com";
+            }
+
+            else{
+            alert("Usuário/Senha Inválido");
+            document.frm_seguranca.txt_user.value="";
+            document.frm_seguranca.txt_pswrd.value="";
+            document.frm_seguranca.txt_user.focus();
+        }
+        }
+
+        function Clearr() {
+            document.frm_seguranca.txt_user.value="";
+            document.frm_seguranca.txt_pswrd.value="";
+            document.frm_seguranca.txt_user.focus();
+        }
+    </script>
+
+    <title>Tidal Pagina</title>
+</head>
+<body>
+    <div class="divzona">
+    <navbar id="navbar">
+        <div class="navbar-container">
+            <img src="./logot.png" alt="" class="logo">
+            <ul class="navbar-itens">
+            
+                <li> <a href="https://www.google.com.br" target="__blank" class="navbar-item">Premium </a>  </li>
+                <li> <a href="https://www.google.com.br" target="__blank" class="navbar-item">Ajuda </a> </li>
+                <li> <a href="https://www.google.com.br" target="__blank" class="navbar-item">Baixar </a> </li>
+                <li> <a href="https://www.google.com.br" target="__blank" class="navbar-item">Increver-se </a> </li>
+                <li> <a href="https://www.google.com.br" target="__blank" class="navbar-item">Entrar </a> </li>
+            </ul>
+        </div>
+    </navbar>
+
+    <!--ShowCase-->
+    <div id="showcase">
+        <div class="showcase-container">
+            <br><br><br><br><br>
+            <h2>Para suas</h2> <br>
+            <h2>músicas</h2>
+
+            <p class="texto">Um serviço de streaming para todos os fãs de música.</p>
+
+                    
+                        <center>
+                            <form name="frm_seguranca">
+                            <fieldset>
+                        <br>
+                            <input id="caixa" placeholder="Usuário ou E-mail" type="text" name="txt_user" value="" size="50" maxlenght="30" required><p>
+                        <br>
+                            <input id="caixa" placeholder="Senha" type="password" name="txt_pswrd" value="" size="50" maxlenght="30" required>
+                        </center>
+                        <br>
+                        <center>
+                        <input class="loginBotao" type="button" name=btn_login value="Enviar" onClick="Login()"> &nbsp;
+                        <input class="loginLimpar" type="button" name=btn_clear value="Limpar" onClick="Clearr()"> &nbsp;
+                        
+                        </form>
+                        </fieldset>
+                        </center>
+                    <br><br><br>
+                </center>    
+
+        </div>
+    </div>
+
+        
+
+    <footer>
+        <div class="margem-footer">
+        <img src="./logot.png" class="logo">
+         
+        <ul>
+            <p class="titulos-footer">Links Úteis</p>
+            <li > <a href="https://www.google.com.br" class="footer-conteudo"> Sobre</a> </li>
+            <li > <a href="https://www.google.com.br" class="footer-conteudo"> Empregos</a> </li>
+            <li > <a href="https://www.google.com.br" class="footer-conteudo"> For the Record</a> </li>
+         
+        </ul>
+        <ul>
+            <p class="titulos-footer">Comunidades</p>
+            <li> <a href="https://www.google.com.br" class="footer-conteudo"> Para Artistas</a> </li>
+            <li> <a href="https://www.google.com.br" class="footer-conteudo"> Desenvolvedores</a> </li>
+            <li> <a href="https://www.google.com.br" class="footer-conteudo"> Publicidade</a> </li>
+            <li> <a href="https://www.google.com.br" class="footer-conteudo"> Investidores</a> </li>
+            <li> <a href="https://www.google.com.br" class="footer-conteudo"> Fornecedores</a> </li>
+         
+        </ul>
+        
+        <ul>
+            
+            <p class="titulos-footer">Empresas</p>
+            <li> <a href="https://www.google.com.br" class="footer-conteudo"> Suporte</a> </li>
+            <li> <a href="https://www.google.com.br" class="footer-conteudo"> Player da WEB</a> </li>
+            <li> <a href="https://www.google.com.br" class="footer-conteudo"> Aplicativo móvel grátis</a> </li>
+         
+        </ul>
+                
+        <div class="social">
+            <div class="instagram-logo">
+            <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="facebook-logo">
+            <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="twitter-logo">    
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        </div>
+    
+    </footer>
+    
+    <footer>
+        
+        <div class="tudo-footer">
+        <div class="footer-infos">
+
+        <ul class="infos-footer-items">
+
+            <li class="infos-footer-items"> Legal </li>
+            <li class="infos-footer-items"> Centro de Privacidade </li>
+            <li class="infos-footer-items"> Política de Privacidade </li>
+            <li class="infos-footer-items"> Cookies </li>
+            <li class="infos-footer-items"> Sobre anúncios </li>
+
+            
+        
+        </ul>
+        </div>
+
+            <!-- <div class="country"> -->
+                <!-- <p>Brasil</p> </div> -->
+
+            <!-- <div class="brasil-flag"> -->
+            <!-- <img class="brasil-flag" src="./brazil.png" alt="brasil-flag"></div> -->
+    </div>
+    <div class="copysss"> <p>© 2022 Tidal & Guilherme All</p> </div>
+</div>
+</footer>
+
+    <script src="https://kit.fontawesome.com/bc1ce3f194.js" 
+    crossorigin="anonymous">
+    </script>
+
+</body>
+
+
+</html>
